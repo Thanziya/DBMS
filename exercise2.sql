@@ -26,4 +26,6 @@ select first_name, last_name, hire_date
 from employees 
 where YEAR(hire_date)  like '1995%';
 
+insert into employees values(207,'Paul','Newton','paulnewton@sqltutorial.org','615.823.5454','1996-07-15',10,14000.00,100,11);
+
 delete from departments where department_name='shipping';
