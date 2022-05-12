@@ -1,8 +1,9 @@
-from pymongo import MongoClient
-client = MongoClient('localhost', 27017)
-mydatabase = client.college1
-collection = mydatabase.studlist1
 
+import pymongo
+url="mongodb://localhost:27017/"
+c=pymongo.MongoClient(url)
+db=c["sample"]
+collection=db["student"]
  #1
 #result = collection.find({"course":"MCA", "gender":"female"}, {"name.fname":1, "name.lname":1,"mark":1, "_id":0 })
 #for x in result:
